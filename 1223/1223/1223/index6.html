@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style6.css">
+    <title>上次紀錄</title>
+</head>
+<body>
+    <!-- 頂部導航欄 -->
+    <div class="header">
+        <a href="./index1.html" class="back-button">⬅</a>
+        <div class="header-title">
+            <h1>上次紀錄</h1>
+        </div>
+        <div class="menu-button" onclick="toggleMenu()">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </div>
+
+    <!-- 漢堡選單 -->
+    <div class="dropdown-menu" id="dropdownMenu">
+        <a href="./index2.html">個人檔案</a>
+        <a href="./index4.html">數學公式</a>
+        <a href="./index5.html">練習題</a>
+        <a href="#" onclick="toggleSubMenu(event)">學習歷程</a>
+        <div class="sub-menu" id="subMenu">
+            <a href="./index6.html">上次紀錄</a>
+            <a href="./index7.html">重點錯誤</a>
+            <a href="./index8.html">已學內容</a>
+        </div>
+    </div>
+
+    <!-- 主體內容 -->
+    <div class="content">
+        <div class="record-container">
+            <div class="record-item">
+                <div class="bookmark"><img src="./img/222.png" alt=""></div>
+                <div class="record-text">1. ⅓ 與 ¼ 的弧型</div>
+            </div>
+
+            <div class="record-item">
+                <div class="bookmark"><img src="./img/222.png" alt=""></div>
+                <div class="record-text">2. π 的公式</div>
+            </div>
+
+            <div class="record-item">
+                <div class="bookmark"><img src="./img/222.png" alt=""></div>
+                <div class="record-text">3. 扇型公式</div>
+            </div>
+
+            <div class="record-item">
+                <div class="record-text">4. 弧長計算</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script6.js"></script>
+</body>
+</html> 

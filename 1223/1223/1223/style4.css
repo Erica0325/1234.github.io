@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    width: 390px;
+    height: 844px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #cce0f4;
+    color: #333;
+    width: 390px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.content {
+    width: 390px;
+    height: calc(844px - 60px);
+    padding: 80px 20px 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 390px) {
+    body {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .header {
+        width: 100%;
+    }
+    
+    .content {
+        width: 100%;
+        height: calc(100vh - 60px);
+    }
+}
+
+.back-button {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.menu-button {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 0;
+    position: absolute;
+    right: 15px;
+}
+
+.menu-line {
+    width: 100%;
+    height: 6px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+/* 漢堡選單 */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    background-color: #e6e6e6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    border-radius: 0 0 15px 15px;
+    z-index: 20;
+    max-width: calc(100% - 30px);
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    background-color: #e6e6e6;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #d4d4d4;
+}
+
+/* 學習歷程選單 */
+.sub-menu {
+    display: none;
+    background-color: #d4d4d4;
+    width: 100%;
+}
+
+.sub-menu a {
+    padding: 12px 15px;
+    background-color: #d4d4d4;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.sub-menu a:hover {
+    background-color: #c4c4c4;
+}
+
+.formula-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formula-card {
+    background-color: #e8eef7;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formula-text {
+    font-size: 20px;
+}
+
+.audio-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.audio-button:hover {
+    opacity: 0.8;
+} 

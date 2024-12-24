@@ -1,0 +1,165 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+
+    
+
+    /* 頂部導航欄 */
+    .header {
+      background-color: #cce0f4;
+      color: #333;
+      width: 100%;
+      max-width: 390px;/* 適配 iPhone 13/14 寬度 */
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 15px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      top: 0;
+      z-index: 10;
+      position: relative;
+    }
+
+    .back-button {
+      font-size: 96px;
+      font-weight: 900;
+      color: #333;
+      text-decoration: none;
+      cursor: pointer;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      padding: 0 5px;
+      margin-left: -10px;
+    }
+
+    .header-title {
+      display: flex;
+      align-items: center;
+    }
+
+    .header img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .header h1 {
+      font-size: 18px;
+      margin: 0;
+      font-weight: normal;
+    }
+
+    .menu-button {
+      cursor: pointer;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 5px 0;
+    }
+
+    .menu-line {
+      width: 100%;
+      height: 6px;
+      background-color: #333;
+      border-radius: 10px;
+    }
+
+    /* 漢堡選單 */
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 15px;
+      background-color: #e6e6e6;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      width: 200px;
+      border-radius: 0 0 15px 15px;
+      z-index: 20;
+      max-width: calc(100% - 30px);
+  }
+  
+  .dropdown-menu a {
+      display: block;
+      padding: 12px 15px;
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+      background-color: #e6e6e6;
+      transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-menu a:hover {
+      background-color: #d4d4d4;
+  }
+
+    /* 學習歷程選單 */
+    .sub-menu {
+      display: none;
+      position: relative;
+      top: 0;
+      left: 0;
+      background-color: #d4d4d4;
+      width: 100%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 30;
+    }
+
+    .sub-menu a {
+      display: block;
+      padding: 12px 15px;
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+      background-color: #d4d4d4;  /* 父元素背景色相同 */
+      transition: background-color 0.3s ease;
+    }
+
+    .sub-menu a:hover {
+      background-color: #c4c4c4;  /* 更深的悬停色 */
+    }
+
+    /* 主體內容 */
+    .content {
+      padding: 80px 20px 20px; /* 上方與頂部導航欄對應，內容內留空間 */
+      width: 100%;
+      max-width: 380px; /* 適配 iPhone 13/14 寬度 */
+      text-align: center;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      flex-grow: 1; /* 填滿剩餘空間 */
+      overflow-y: auto; /* 滾動支持 */
+    }
+
+    .content h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .content p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.5;
+      margin: 5px 0;
+    }
+
+    .content p strong {
+      color: #000;
+    }
+
+    

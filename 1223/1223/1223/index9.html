@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拍照</title>
+    <link rel="stylesheet" href="style9.css">
+</head>
+<body>
+    <!-- 頂部導航欄 -->
+    <div class="header">
+        <div class="header-title" style="flex: 1; text-align: center;">
+            <h1>拍照</h1>
+        </div>
+        <div class="menu-button" onclick="toggleMenu()">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </div>
+
+    <!-- 漢堡選單 -->
+    <div class="dropdown-menu" id="dropdownMenu">
+        <a href="./index2.html">個人檔案</a>
+        <a href="./index4.html">數學公式</a>
+        <a href="./index5.html">練習題</a>
+        <a href="#" onclick="toggleSubMenu(event)">學習歷程</a>
+        <div class="sub-menu" id="subMenu">
+            <a href="./index6.html">上次紀錄</a>
+            <a href="./index7.html">重點錯誤</a>
+            <a href="./index8.html">已學內容</a>
+        </div>
+    </div>
+
+        <main class="camera-view">
+            <div class="camera-frame"></div>
+            <div class="camera-controls">
+                <button class="capture-btn"></button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script7.js"></script>
+</body>
+</html>

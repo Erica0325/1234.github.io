@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style5.css">
+    <title>練習題</title>
+</head>
+<body>
+    <!-- 頂部導航欄 -->
+    <div class="header">
+        <a href="./index9.html" class="back">
+            <img src="./img/photo_camera_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="拍照">
+        </a>
+        <div class="header-title">
+            <h1>練習題</h1>
+        </div>
+        <div class="menu-button" onclick="toggleMenu()">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </div>
+
+    <!-- 漢堡選單 -->
+    <div class="dropdown-menu" id="dropdownMenu">
+        <a href="./index2.html">個人檔案</a>
+        <a href="./index4.html">數學公式</a>
+        <a href="./index5.html">練習題</a>
+        <a href="#" onclick="toggleSubMenu(event)">學習歷程</a>
+        <div class="sub-menu" id="subMenu">
+            <a href="./index6.html">上次紀錄</a>
+            <a href="./index7.html">重點錯誤</a>
+            <a href="./index8.html">已學內容</a>
+        </div>
+    </div>
+
+    <!-- 主體內容 -->
+    <div class="content">
+        <div class="question-container">
+            <div class="question-card">
+                <div class="question-text">⅓是哪塊?</div>
+                <button class="audio-button" onclick="playAudio(1)">🔊</button>
+            </div>
+
+            <div class="question-card">
+                <div class="question-text">圓周率怎麼算?</div>
+                <button class="audio-button" onclick="playAudio(2)">🔊</button>
+            </div>
+
+            <div class="question-card">
+                <div class="question-text">⅓圓面積怎麼算?</div>
+                <button class="audio-button" onclick="playAudio(3)">🔊</button>
+            </div>
+
+            <div class="question-card">
+                <div class="question-text">弧長的公式?</div>
+                <button class="audio-button" onclick="playAudio(4)">🔊</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script5.js"></script>
+</body>
+</html> 

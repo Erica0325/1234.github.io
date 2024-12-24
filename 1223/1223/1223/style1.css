@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-container {
+    width: 390px;
+    height: 844px;
+    margin: 0 auto;
+    background-color: #EEF3FB;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.scan-title {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.scan-container {
+    width: 280px;
+    height: 280px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.scan-frame {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.corner {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+}
+
+.top-right {
+    top: 0;
+    right: 0;
+    border-left: none;
+    border-bottom: none;
+}
+
+.bottom-left {
+    bottom: 0;
+    left: 0;
+    border-right: none;
+    border-top: none;
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+}
+
+.scan-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.scan-text div:first-child {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.scan-text div:last-child {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.decoration-circles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.circle, .circle-dark {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #4A90E2;
+    opacity: 0.8;
+}
+
+.circle-dark {
+    z-index: 1;
+}
+
+.circle-1 {
+    width: 120px;
+    height: 120px;
+    top: 20px;
+    left: 20px;
+}
+
+.circle-2 {
+    width: 80px;
+    height: 80px;
+    top: 40px;
+    right: 20px;
+}
+
+.circle-3 {
+    width: 100px;
+    height: 100px;
+    bottom: 200px;
+    left: 20px;
+}
+
+.circle-4 {
+    width: 90px;
+    height: 90px;
+    bottom: 150px;
+    right: 20px;
+}
+
+.circle-dark-1 {
+    width: 60px;
+    height: 60px;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.circle-dark-2 {
+    width: 40px;
+    height: 40px;
+    top: 30px;
+    left: 40%;
+}
+
+@media (max-width: 390px) {
+    .app-container {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+/* 漢堡選單 */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    background-color: #e6e6e6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    border-radius: 0 0 15px 15px;
+    z-index: 20;
+    max-width: calc(100% - 30px);
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    background-color: #e6e6e6;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #d4d4d4;
+} 

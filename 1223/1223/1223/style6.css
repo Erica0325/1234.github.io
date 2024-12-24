@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    width: 390px;
+    height: 844px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #cce0f4;
+    color: #333;
+    width: 390px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+.content {
+    width: 390px;
+    height: calc(844px - 60px);
+    padding: 80px 20px 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* 其他基本樣式與 style4.css 相同 */
+
+.record-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.record-item {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.bookmark {
+    color: #FFB800;
+    font-size: 20px;
+}
+
+.record-text {
+    font-size: 20px;
+    color: #333;
+}
+
+/* 其他樣式保持與 style4.css 一致 */
+
+.back-button {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;  /* 移除底線 */
+    cursor: pointer;
+}
+img{
+    width: 24px;
+    height: 24px;
+}
+
+/* 漢堡選單按鈕 */
+.menu-button {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.menu-line {
+    width: 100%;
+    height: 6px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+/* 漢堡選單 */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    background-color: #e6e6e6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    border-radius: 0 0 15px 15px;
+    z-index: 20;
+    max-width: calc(100% - 30px);
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    background-color: #e6e6e6;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #d4d4d4;
+}
+
+/* 學習歷程選單 */
+.sub-menu {
+    display: none;
+    background-color: #d4d4d4;
+    width: 100%;
+}
+
+.sub-menu a {
+    padding: 12px 15px;
+    background-color: #d4d4d4;
+    font-size: 16px;
+}
+
+.sub-menu a:hover {
+    background-color: #c4c4c4;
+}
+.header h1 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+} 
